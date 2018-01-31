@@ -1,11 +1,11 @@
 import redSky from '../api/redSky';
 import * as types from '../constants/ActionTypes';
 
-export loadItem = item => ({
+const loadItem = item => ({
   type: types.LOAD_ITEM,
   item: item
 })
 
-export const getItem = (tcin) => dispatch => {
-  dispatch(loadItem(redSky.getItem(tcin));
+export const getItem = tcin => dispatch => {
+  dispatch(loadItem(redSky.getItem(tcin)));
 }
