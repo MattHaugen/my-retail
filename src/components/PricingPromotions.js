@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import colors from '../constants/colors';
 
 const Price = styled.div`
   width: 100%;
@@ -10,7 +11,7 @@ const Price = styled.div`
   .qualifier {
     font-size: 12px;
     font-weight: normal;
-    color: #666666;
+    color: ${colors.darkGray};
     margin-left: 5px;
   }
 `;
