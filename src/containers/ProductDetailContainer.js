@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import ProductTitle from '../components/ProductTitle';
+import PricingPromotions from '../components/PricingPromotions';
 
 const StyledProductDetailContainer = styled.div`
   display: flex;
@@ -23,7 +24,7 @@ const ProductDetailContainer = ({item}) => (
       <ProductTitle title={item.title} />
     </StyledLeftColumn>
     <StyledRightColumn>
-
+      <PricingPromotions offers={item.Offers} promotions={item.Promotions} />
     </StyledRightColumn>
   </StyledProductDetailContainer>
 );

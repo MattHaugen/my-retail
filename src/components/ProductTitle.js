@@ -7,6 +7,7 @@ const Header = styled.h1`
   font-weight: 200;
   padding-left: 25px;
   padding-right: 25px;
+  margin-top: 0px;
 `;
 
 const ProductTitle = ({ title }) => (
