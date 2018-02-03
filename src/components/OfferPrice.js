@@ -9,7 +9,7 @@ const StyledOfferPrice = styled.div`
   font-weight: bold;
   margin-bottom: 40px;
 
-  .qualifier {
+  .offer-price-qualifier {
     font-size: 12px;
     font-weight: normal;
     color: ${colors.darkGray};
@@ -30,7 +30,7 @@ function getOfferPrice(offers) {
 const OfferPrice = ({ offers }) => (
   <StyledOfferPrice>
     {getOfferPrice(offers).formattedPriceValue}
-    <span className="qualifier">{getOfferPrice(offers).priceQualifier}</span>
+    <span className="offer-price-qualifier">{getOfferPrice(offers).priceQualifier}</span>
   </StyledOfferPrice>
 )
 

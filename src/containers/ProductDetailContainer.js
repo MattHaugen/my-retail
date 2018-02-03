@@ -3,10 +3,12 @@ import { connect } from 'react-redux';
 import styled from 'styled-components';
 import ProductTitle from '../components/ProductTitle';
 import PricingPromotions from '../components/PricingPromotions';
+import ImageCarousel from '../components/ImageCarousel';
 
 const StyledProductDetailContainer = styled.div`
   display: flex;
   width: 1000px;
+  margin-top: 20px;
 `;
 
 const StyledLeftColumn = styled.div`
@@ -22,6 +24,7 @@ const ProductDetailContainer = ({item}) => (
   <StyledProductDetailContainer>
     <StyledLeftColumn>
       <ProductTitle title={item.title} />
+      <ImageCarousel images={item.Images[0]} />
     </StyledLeftColumn>
     <StyledRightColumn>
       <PricingPromotions offers={item.Offers} promotions={item.Promotions} />
