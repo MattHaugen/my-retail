@@ -32,13 +32,25 @@ const ZoomControl = styled.button`
 const CarouselNavigation = styled.div`
   width: 100%;
   height: 70px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
 
   button {
     height: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: #FFF;
 
     img {
       height: 100%;
+      animation: fadein 2s;
     }
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
   }
 `;
 
@@ -82,7 +94,7 @@ class ImageCarousel extends React.Component {
 
     return (
       <CarouselContainer>
-        <img src={this.state.images[this.state.primaryImageIndex].image} alt='Primary'/>
+        <img className='image-carousel-primary-image' src={this.state.images[this.state.primaryImageIndex].image} alt='Primary'/>
         <ZoomControl>
           <FontAwesomeIcon icon={faSearchPlus} className='image-carousel-zoom-icon'/>view larger
         </ZoomControl>
