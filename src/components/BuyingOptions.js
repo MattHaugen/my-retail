@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { css } from 'styled-components'
+import { css } from 'styled-components';
 import colors from '../constants/colors';
 
 const validOnlineCodes = ["0", "1"];

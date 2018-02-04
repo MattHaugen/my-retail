@@ -5,6 +5,7 @@ import { changeQuantity } from '../actions';
 import QuantityControl from '../components/QuantityControl';
 import BuyingOptions from '../components/BuyingOptions';
 import ReturnSummary from '../components/ReturnSummary';
+import AdditionalProductActions from '../components/AdditionalProductActions';
 
 const Container = styled.div`
   display: flex;
@@ -17,6 +18,7 @@ const ProductActionsContainer = ({item, quantity, changeQuantity}) => (
     <QuantityControl quantity={quantity} setQuantity={changeQuantity} />
     <BuyingOptions purchasingChannelCode={item.purchasingChannelCode} />
     <ReturnSummary returnPolicy={item.ReturnPolicy[0]} />
+    <AdditionalProductActions />
   </Container>
 );
 
