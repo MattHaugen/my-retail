@@ -5,6 +5,7 @@ import ProductTitle from '../components/ProductTitle';
 import PricingPromotions from '../components/PricingPromotions';
 import ImageCarousel from '../components/ImageCarousel';
 import ReviewsSummary from '../components/ReviewsSummary';
+import ProductHighlights from '../components/ProductHighlights';
 
 const StyledProductDetailContainer = styled.div`
   display: flex;
@@ -30,6 +31,7 @@ const ProductDetailContainer = ({item}) => (
     </StyledLeftColumn>
     <StyledRightColumn>
       <PricingPromotions offers={item.Offers} promotions={item.Promotions} />
+      <ProductHighlights highlights={item.ItemDescription[0].features} />
     </StyledRightColumn>
   </StyledProductDetailContainer>
 );
