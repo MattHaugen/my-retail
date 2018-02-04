@@ -2,6 +2,9 @@ import React from 'react';
 import Moment from 'react-moment';
 import styled from 'styled-components';
 import colors from '../constants/colors';
+import StarScale from './StarScale';
+
+const maxPossibleRating = 5;
 
 const Container = styled.div`
   font-family: 'Arial', sans-serif;
@@ -16,7 +19,8 @@ const Container = styled.div`
 const Title = styled.h4`
   font-size: 16px;
   font-weight: bold;
-  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 `;
 
 const Customer = styled.a`
@@ -31,6 +35,7 @@ const Customer = styled.a`
 
 const CustomerReview = ({ review }) => (
   <Container>
+    <StarScale actualRating={review.overallRating} possibleRating={maxPossibleRating} />
     <Title>{review.title}</Title>
     <p>{review.review}</p>
     <p>

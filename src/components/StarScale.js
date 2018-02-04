@@ -17,7 +17,7 @@ const StarContainer = styled.span`
 const StarScale = ({ actualRating, possibleRating, iconSize }) => {
   const parsedActual = Number.parseInt(actualRating, 10);
   const parsePossible = Number.parseInt(possibleRating, 10);
-  const ratingScale = Array(parsePossible).fill('').fill('positive', 0, parsedActual - 1);
+  const ratingScale = Array(parsePossible).fill('').fill('positive', 0, parsedActual);
 
   const stars = ratingScale.map((rating, index) => {
     return <FontAwesomeIcon icon={faStar} key={index} className={`${rating} ${iconSize}`} />
