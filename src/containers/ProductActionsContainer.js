@@ -9,9 +9,9 @@ const Container = styled.div`
   width: 100%;
 `;
 
-const ProductActionsContainer = ({quantity}) => (
+const ProductActionsContainer = ({quantity, changeQuantity}) => (
   <Container>
-    <QuantityControl quantity={quantity} />
+    <QuantityControl quantity={quantity} setQuantity={changeQuantity} />
   </Container>
 );
 
