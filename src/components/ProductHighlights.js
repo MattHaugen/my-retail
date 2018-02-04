@@ -5,6 +5,7 @@ import colors from '../constants/colors';
 const Container = styled.div`
   font-size: 14px;
   color: ${colors.darkGray};
+  margin-bottom: 30px;
 `;
 
 const Header = styled.h1`
