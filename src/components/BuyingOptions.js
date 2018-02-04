@@ -9,6 +9,7 @@ const validStoreCodes = ["0", "2"];
 const Container = styled.div`
   width: 100%;
   display: flex;
+  margin-bottom: 30px;
 `;
 
 const ButtonContainer = styled.div`
@@ -63,16 +64,16 @@ const BuyingOptions = ({ purchasingChannelCode }) => {
   let purchaseButtons = [];
   if (validStoreCodes.includes(purchasingChannelCode)) {
     purchaseButtons.push(
-      <ButtonContainer>
-        <Button key='store'>Pick Up In Store</Button>
+      <ButtonContainer key='store'>
+        <Button>Pick Up In Store</Button>
         <Link href='#'>find in a store</Link>
       </ButtonContainer>
     );
   }
   if (validOnlineCodes.includes(purchasingChannelCode)) {
     purchaseButtons.push(
-      <ButtonContainer>
-        <Button red key='online'>Add to Cart</Button>
+      <ButtonContainer key='online'>
+        <Button red>Add to Cart</Button>
       </ButtonContainer>
     );
   }
