@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
+import ProductActionsContainer from '../containers/ProductActionsContainer';
 import ProductTitle from '../components/ProductTitle';
 import PricingPromotions from '../components/PricingPromotions';
 import ImageCarousel from '../components/ImageCarousel';
@@ -31,6 +32,7 @@ const ProductDetailContainer = ({item}) => (
     </StyledLeftColumn>
     <StyledRightColumn>
       <PricingPromotions offers={item.Offers} promotions={item.Promotions} />
+      <ProductActionsContainer />
       <ProductHighlights highlights={item.ItemDescription[0].features} />
     </StyledRightColumn>
   </StyledProductDetailContainer>
