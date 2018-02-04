@@ -6,6 +6,7 @@ const Container = styled.div`
   border: 1px solid ${colors.lightGray};
   border-radius: 3px;
   padding: 5px 10px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;

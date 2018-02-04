@@ -5,7 +5,8 @@ const colors = {
   lightGray: '#cccccc',
   nearWhite: '#f6f5f5',
   targetRed: '#cc0000',
-  blue: '#0066cc'
+  targetRedRGB: '240, 0, 0',
+  blue: '#0066cc',
 }
 
 export default colors;
