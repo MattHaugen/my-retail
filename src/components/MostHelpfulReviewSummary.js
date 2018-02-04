@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import colors from '../constants/colors';
+import CustomerReview from './CustomerReview';
 
 const Container = styled.div`
+  font-family: 'Arial', sans-serif;
+  flex-basis: 0;
   flex-grow: 1;
 
   hr {
@@ -13,7 +16,6 @@ const Container = styled.div`
 `;
 
 const Header = styled.h3`
-  font-family: 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 200;
   line-height: 14px;
@@ -22,9 +24,12 @@ const Header = styled.h3`
 `;
 
 const SubTitle = styled.span`
-  font-family: 'Arial', sans-serif;
   font-size: 12px;
   color: ${colors.darkGray};
+`;
+
+const CustomerReviewContainer = styled.div`
+  padding-right: 15px;
 `;
 
 const MostHelpfulReviewSummary = ({ title, subtitle, review }) => (
@@ -32,6 +37,9 @@ const MostHelpfulReviewSummary = ({ title, subtitle, review }) => (
     <Header>{title}</Header>
     <SubTitle>{subtitle}</SubTitle>
     <hr />
+    <CustomerReviewContainer>
+      <CustomerReview review={review} />
+    </CustomerReviewContainer>
   </Container>
 )
 
