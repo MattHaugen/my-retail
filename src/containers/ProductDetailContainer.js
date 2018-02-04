@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import ProductTitle from '../components/ProductTitle';
 import PricingPromotions from '../components/PricingPromotions';
 import ImageCarousel from '../components/ImageCarousel';
+import ReviewsSummary from '../components/ReviewsSummary';
 
 const StyledProductDetailContainer = styled.div`
   display: flex;
@@ -25,6 +26,7 @@ const ProductDetailContainer = ({item}) => (
     <StyledLeftColumn>
       <ProductTitle title={item.title} />
       <ImageCarousel images={item.Images[0]} />
+      <ReviewsSummary reviews={item.CustomerReview[0]} />
     </StyledLeftColumn>
     <StyledRightColumn>
       <PricingPromotions offers={item.Offers} promotions={item.Promotions} />

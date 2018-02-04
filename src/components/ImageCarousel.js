@@ -12,6 +12,7 @@ const CarouselContainer = styled.div`
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 `;
 
 const ZoomControl = styled.button`
