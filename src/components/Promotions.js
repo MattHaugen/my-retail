@@ -4,7 +4,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faTag from '@fortawesome/fontawesome-free-solid/faTag';
 import colors from '../constants/colors';
 
-const StyledPromotions = styled.div`
+const Container = styled.div`
   width: 100%;
   font-family: 'Arial', sans-serif;
   font-size: 18px;
@@ -33,9 +33,9 @@ function renderPromotions(promotions) {
 }
 
 const Promotions = ({ promotions }) => (
-  <StyledPromotions>
+  <Container>
     {renderPromotions(promotions)}
-  </StyledPromotions>
+  </Container>
 )
 
 export default Promotions;

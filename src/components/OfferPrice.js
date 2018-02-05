@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import colors from '../constants/colors';
 
-const StyledOfferPrice = styled.div`
+const Container = styled.div`
   width: 100%;
   font-family: 'Arial', sans-serif;
   font-size: 30px;
@@ -28,10 +28,10 @@ function getOfferPrice(offers) {
 }
 
 const OfferPrice = ({ offers }) => (
-  <StyledOfferPrice>
+  <Container>
     {getOfferPrice(offers).formattedPriceValue}
     <span className="offer-price-qualifier">{getOfferPrice(offers).priceQualifier}</span>
-  </StyledOfferPrice>
+  </Container>
 )
 
 export default OfferPrice;
