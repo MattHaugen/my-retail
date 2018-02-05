@@ -31,7 +31,7 @@ Your app is ready to be deployed!
 ## CI/CD Diagram
 
 This diagram makes the following assumptions about the environment
-* App is run in a Kubernetes environment
-* App contains a `Dockerfile`
+* App is run in a Kubernetes environment via Docker container
+* Drone provides the continuous delivery platform
 
 ![alt text](CICD.jpg "CI/CD Diagram")
