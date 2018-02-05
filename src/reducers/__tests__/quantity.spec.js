@@ -1,5 +1,5 @@
-import quantity from './quantity';
-import * as types from '../constants/ActionTypes';
+import quantity from '../quantity';
+import * as types from '../../constants/ActionTypes';
 
 describe('quantity reducer', () => {
   it('should handle initial state', () => {

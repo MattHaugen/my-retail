@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdditionalProductActions component renders correctly (snapshot) 1`] = `
+<div
+  className="sc-bdVaJa keWvrX"
+>
+  <button
+    className="sc-bwzfXH zaifQ"
+  >
+    Add to Registry
+  </button>
+  <button
+    className="sc-bwzfXH zaifQ"
+  >
+    Add to List
+  </button>
+  <button
+    className="sc-bwzfXH zaifQ"
+  >
+    Share
+  </button>
+</div>
+`;

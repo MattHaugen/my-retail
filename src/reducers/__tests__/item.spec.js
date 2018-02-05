@@ -1,5 +1,5 @@
-import item from './item';
-import * as types from '../constants/ActionTypes';
+import item from '../item';
+import * as types from '../../constants/ActionTypes';
 
 describe('item reducer', () => {
   it('should handle initial state', () => {
