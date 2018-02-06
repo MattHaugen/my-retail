@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OfferPrice component properly displays the offer price and qualifier 1`] = `
+<div
+  className="sc-bdVaJa jqxsIb"
+>
+  $139.99
+  <span
+    className="offer-price-qualifier"
+  >
+    Online Price
+  </span>
+</div>
+`;
+
+exports[`OfferPrice component should display nothing if no OfferPrice 1`] = `
+<div
+  className="sc-bdVaJa jqxsIb"
+>
+  <span
+    className="offer-price-qualifier"
+  />
+</div>
+`;
+
+exports[`OfferPrice component should display nothing if the no OfferPrice 1`] = `
+<div
+  className="sc-bdVaJa jqxsIb"
+>
+  <span
+    className="offer-price-qualifier"
+  />
+</div>
+`;
