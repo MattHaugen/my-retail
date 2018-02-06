@@ -39,8 +39,8 @@ const CustomerReview = ({ review }) => (
     <Title>{review.title}</Title>
     <p>{review.review}</p>
     <p>
-      <Customer href=''>{review.screenName}</Customer>
-      <Moment format='MMMM DD, YYYY'>{review.datePosted}</Moment>
+      <Customer href='#'>{review.screenName}</Customer>
+      <Moment format='MMMM DD, YYYY'>{new Date(review.datePosted)}</Moment>
     </p>
   </Container>
 )
