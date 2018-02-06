@@ -1,6 +1,7 @@
 import React from 'react';
 import Moment from 'react-moment';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import colors from '../constants/colors';
 import StarScale from './StarScale';
 
@@ -44,5 +45,9 @@ const CustomerReview = ({ review }) => (
     </p>
   </Container>
 )
+
+CustomerReview.propTypes = {
+  review: PropTypes.object.isRequired
+};
 
 export default CustomerReview;

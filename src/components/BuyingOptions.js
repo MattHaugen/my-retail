@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { css } from 'styled-components';
 import colors from '../constants/colors';
 
@@ -59,8 +60,12 @@ const Link = styled.a`
     text-decoration: underline;
   }
 `;
+BuyingOptions.PropTypes = {
+  purchasingChannelCode: PropTypes.string
+}
 
 const BuyingOptions = ({ purchasingChannelCode }) => {
+
   let purchaseButtons = [];
   if (validStoreCodes.includes(purchasingChannelCode)) {
     purchaseButtons.push(
@@ -83,6 +88,10 @@ const BuyingOptions = ({ purchasingChannelCode }) => {
       {purchaseButtons}
     </Container>
   );
+}
+
+BuyingOptions.propTypes = {
+  purchasingChannelCode: PropTypes.string.isRequired,
 }
 
 export default BuyingOptions;
