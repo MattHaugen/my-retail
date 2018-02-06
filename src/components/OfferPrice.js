@@ -30,7 +30,7 @@ function getOfferPrice(offers) {
 const OfferPrice = ({ offers }) => (
   <Container>
     {getOfferPrice(offers).formattedPriceValue}
-    <span className="offer-price-qualifier">{getOfferPrice(offers).priceQualifier}</span>
+    <span className='offer-price-qualifier'>{getOfferPrice(offers).priceQualifier}</span>
   </Container>
 )
 

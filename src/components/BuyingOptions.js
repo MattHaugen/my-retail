@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import { css } from 'styled-components';
 import colors from '../constants/colors';
 
-const validOnlineCodes = ["0", "1"];
-const validStoreCodes = ["0", "2"];
+const validOnlineCodes = ['0', '1'];
+const validStoreCodes = ['0', '2'];
 
 const Container = styled.div`
   width: 100%;

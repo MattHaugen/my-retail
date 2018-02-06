@@ -45,7 +45,7 @@ const ProductDetailContainer = ({item}) => (
     <StyledLeftColumn>
       <ProductTitle title={item.title} />
       <ImageCarousel images={item.Images[0]} />
-      <MediaQuery query="(min-width: 1000px)">
+      <MediaQuery query='(min-width: 1000px)'>
         <ReviewsSummary reviews={item.CustomerReview[0]} />
       </MediaQuery>
     </StyledLeftColumn>
@@ -53,7 +53,7 @@ const ProductDetailContainer = ({item}) => (
       <PricingPromotions offers={item.Offers} promotions={item.Promotions} />
       <ProductActionsContainer />
       <ProductHighlights highlights={item.ItemDescription[0].features} />
-      <MediaQuery query="(max-width: 1000px)">
+      <MediaQuery query='(max-width: 1000px)'>
         <ReviewsSummary reviews={item.CustomerReview[0]} />
       </MediaQuery>
     </StyledRightColumn>
