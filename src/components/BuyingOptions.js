@@ -60,9 +60,6 @@ const Link = styled.a`
     text-decoration: underline;
   }
 `;
-BuyingOptions.PropTypes = {
-  purchasingChannelCode: PropTypes.string
-}
 
 const BuyingOptions = ({ purchasingChannelCode }) => {
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faSearchPlus from '@fortawesome/fontawesome-free-solid/faSearchPlus';
 import faChevronLeft from '@fortawesome/fontawesome-free-solid/faChevronLeft';
@@ -107,6 +108,13 @@ class ImageCarousel extends React.Component {
       </CarouselContainer>
     )
   }
+}
+
+ImageCarousel.propTypes = {
+  images: PropTypes.shape({
+    PrimaryImage: PropTypes.array.isRequired,
+    AlternateImages: PropTypes.array.isRequired
+  })
 }
 
 export default ImageCarousel;

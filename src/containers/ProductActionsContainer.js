@@ -27,7 +27,7 @@ const mapStateToProps = state => ({
   item: state.item
 })
 
-const mapDispatchToProps = (dispatch, ownProps) => ({
+const mapDispatchToProps = (dispatch) => ({
   changeQuantity: (quantity) => {
     dispatch(changeQuantity(quantity));
   }
