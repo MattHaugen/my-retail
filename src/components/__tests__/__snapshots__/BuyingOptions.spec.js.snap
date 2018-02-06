@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BuyingOptions component displays the buy online button if the purchasingChannelCode prop is 1 1`] = `
+<div
+  className="sc-bdVaJa keWvrX"
+>
+  <div
+    className="sc-bwzfXH boOBsf"
+  >
+    <button
+      className="sc-htpNat DtzZY"
+    >
+      Add to Cart
+    </button>
+  </div>
+</div>
+`;
+
+exports[`BuyingOptions component displays the pick up in store button if the purchasingChannelCode prop is 2 1`] = `
+<div
+  className="sc-bdVaJa keWvrX"
+>
+  <div
+    className="sc-bwzfXH boOBsf"
+  >
+    <button
+      className="sc-htpNat gdNmXu"
+    >
+      Pick Up In Store
+    </button>
+    <a
+      className="sc-bxivhb dEQLLF"
+      href="#"
+    >
+      find in a store
+    </a>
+  </div>
+</div>
+`;
+
+exports[`BuyingOptions component displays two buttons if the purchasingChannelCode prop is 0 1`] = `
+<div
+  className="sc-bdVaJa keWvrX"
+>
+  <div
+    className="sc-bwzfXH boOBsf"
+  >
+    <button
+      className="sc-htpNat gdNmXu"
+    >
+      Pick Up In Store
+    </button>
+    <a
+      className="sc-bxivhb dEQLLF"
+      href="#"
+    >
+      find in a store
+    </a>
+  </div>
+  <div
+    className="sc-bwzfXH boOBsf"
+  >
+    <button
+      className="sc-htpNat DtzZY"
+    >
+      Add to Cart
+    </button>
+  </div>
+</div>
+`;
